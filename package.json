@@ -1,0 +1,23 @@
+{
+  "name": "quiz-management",
+  "version": "1.0.0",
+  "description": "EPA project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeharrison95/WebiSchoolsQuizManagement.git"
+  },
+  "author": "Luke Harrison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukeharrison95/WebiSchoolsQuizManagement/issues"
+  },
+  "homepage": "https://github.com/lukeharrison95/WebiSchoolsQuizManagement#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
