@@ -1,3 +1,4 @@
-module.exports ={
-    users: require('../controller/users')
+module.exports = {
+  users: require('../controller/users'),
+
 };

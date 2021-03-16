@@ -1,8 +1,7 @@
 const express = require('express');
-const router = express.Router();
 const index = require('./index');
 
-
+const router = express.Router();
 
 router.use('/users', index.users);
 
