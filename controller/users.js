@@ -5,12 +5,9 @@ const router = express.Router();
 const User = require('../models/users');
 
 router.get("/getUsers", async (request,response) => {
-    try {
-        var result = await User.find().exec();
-        response.send(result);
-    } catch (error){
-        response.status(500).send(error);
-    }
+    User.find()
+    .then(result => response.status(200).json(result))
+    .catch(err => response.status(500).send(err));
 });
 
 module.exports = router;
