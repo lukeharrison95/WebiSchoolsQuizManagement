@@ -7,12 +7,12 @@ const quizSchema = new Schema({
         type: String,
         required: true
     },
-    questions: {
+    questions: [{
         question: {
             type: String,
             required: true
         },
-        answers: {
+        answers: [{
             answer:{
                 type: String,
                 required: true
@@ -21,8 +21,8 @@ const quizSchema = new Schema({
                 type: Boolean,
                 required: true
             }
-        }
-    }
+        }]
+    }]
 })
 
 const Quiz = mongoose.model('Quiz', quizSchema);
